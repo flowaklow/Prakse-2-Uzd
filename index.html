@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz-container">
+        <div class="question" id="question">Question text</div>
+        <ul class="options">
+            <li class="option"><input type="radio" name="option" value="0"> <span id="option0">Option 1</span></li>
+            <li class="option"><input type="radio" name="option" value="1"> <span id="option1">Option 2</span></li>
+            <li class="option"><input type="radio" name="option" value="2"> <span id="option2">Option 3</span></li>
+            <li class="option"><input type="radio" name="option" value="3"> <span id="option3">Option 4</span></li>
+        </ul>
+        <button id="submit-btn" onclick="submitAnswer()">Submit</button>
+        <div id="feedback" class="feedback"></div>
+        <div id="score">Score: 0</div>
+        <button id="next-btn" class="hidden" onclick="nextQuestion()">Next Question</button>
+        <div class="result hidden" id="result"></div>
+        <button id="restart-btn" class="hidden" onclick="restartQuiz()" disabled>Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
